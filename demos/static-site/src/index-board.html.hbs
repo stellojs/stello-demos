@@ -1,0 +1,37 @@
+{{> layoutHeader board}}
+
+{{!--
+  Cheat Sheet
+  ===========
+
+  Variables:
+    - allCards: Array of all the cards on the board
+    - allLists: Array of all lists on the board
+    - board: This board instance
+
+  Helpers:
+    - eachCard: Iterate through all cards on board, regardless of context
+    - eachCardInList: Iterate through the cards in list by name or id
+    - eachList: Iterate through all lists on board, regardless of context
+    - markdown: Convert some markdown to html (provided by Stello)
+--}}
+
+<h1>{{board.name}}</h1>
+
+<p>Enjoy this silly static site build from the demo board :).</p>
+
+<p>The site has one page for each card on the board, plus this one to serve as a
+langing page searching to help you find just what you're looking for ;).</p>
+
+<p>Use the navigation links at the top of the page to get around or use the form
+below to search for content.</p>
+
+<div>
+  <input type="text" class="site-search" placeholder="Search this site!" />
+
+  <p class="no-search-results">
+    I've got no search results to show you.
+  </p>
+</div>
+
+{{> layoutFooter}}

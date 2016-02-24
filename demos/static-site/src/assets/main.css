@@ -1,0 +1,44 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #444;
+  padding-top: 30px;
+}
+
+ul.tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.tabs li {
+  display: inline;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+input.site-search {
+  width: 478px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.no-search-results {
+  color: #888;
+}
+
+footer {
+  margin-top: 30px;
+  color: #ccc;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #eee;
+}

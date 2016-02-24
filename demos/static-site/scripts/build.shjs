@@ -1,0 +1,13 @@
+
+require('shelljs/global');
+
+exec('stello build');
+
+cp('src/assets/*.*', 'dist/');
+
+mv('dist/b-*', 'dist/index.html');
+
+ls('dist/c-*').forEach(function(f) {
+  mv(f, f.replace(/c-\d+-/, ''));
+});
+
