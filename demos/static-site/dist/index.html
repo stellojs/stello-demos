@@ -22,15 +22,39 @@
 langing page searching to help you find just what you're looking for ;).</p>
 
 <p>Use the navigation links at the top of the page to get around or use the form
-below to search for content.</p>
+below to search for content. Click <a href="/index.html">here</a> to return to
+the main demos landing page.</p>
 
 <div>
-  <input type="text" class="site-search" placeholder="Search this site!" />
+  <input type="text" class="site-search" placeholder="Enter 3 or more characters to search!" />
+
+  <ul class="search-results">
+    <script type="text/jq-template" id="search-result-tpl">
+      <li style="display:none">
+        <a href="#">link</a>
+      </li>
+    </script>
+  </ul>
 
   <p class="no-search-results">
     I've got no search results to show you.
   </p>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+var searchData = [
+    {
+      name: 'Hello World',
+      desc: 'Hello there  This site was built from the  Stello Boilerplate  sb  board  which demonstrates how to structure your Trello boards for use with  stello   For this example we re using a public board  but private boards will work too   For more information on  stello  see the docs on the  GitHub repo  gh     sb   https   trello com b u4YdciVy  Stello Boilerplate Trello board   gh   https   github com jtrussell stello  Stello on GitHub ',
+      link: 'hello-world.html'
+    },
+    {
+      name: 'Typography',
+      desc: '  Headings    Heading One    Heading Two     Heading Three      Heading Four       Heading Five        Heading Six    Lists    list item   list item     list item       list item     list item   list item  1  list item 2  list item   1  list item 3  list item    Code  Here is some  inline code    Here is some      block code        Block Quotes    Bossy Sprockets  All that steam has gone through your funnel          Thomas   For more information on markdown syntax see  this page  md     md   http   daringfireball net projects markdown syntax  Markdown syntax ',
+      link: 'typography.html'
+    },
+];
+</script>
 
 
       <footer>
@@ -39,5 +63,9 @@ below to search for content.</p>
         <span>Released under The MIT License</span>
       </footer>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

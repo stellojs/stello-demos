@@ -16,6 +16,14 @@ ul.tabs li {
   display: inline;
 }
 
+ul.tabs a {
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+}
+
 .container {
   width: 500px;
   margin: 0 auto;
