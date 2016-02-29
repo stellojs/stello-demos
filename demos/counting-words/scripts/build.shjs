@@ -1,0 +1,8 @@
+
+require('shelljs/global');
+
+exec('stello build');
+
+mv('dist/b-*', 'dist/index.html');
+
+
