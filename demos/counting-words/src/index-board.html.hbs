@@ -42,8 +42,8 @@
 
       var totalWords = 0 {{#eachCard}} + {{countWords desc}} {{/eachCard}};
 
-      var height = 300
-        , width = 300
+      var height = 600
+        , width = 600
         , margin = {
             top: 15,
             bottom: 15,
@@ -63,15 +63,14 @@
         return '' + d.pos;
       });
 
-      var cxs = [
-        width/4,
-        (3*width)/4
-      ];
+      var cxs = []
+        , cys = [];
 
-      var cys = [
-        height/4,
-        (3*height)/4
-      ];
+      for(var i = data.length; i--;) {
+        cxs.push(Math.floor(Math.random() * 1/2 * width + width/4));
+        cys.push(Math.floor(Math.random() * 1/2 * height + height/4));
+      }
+
 
       var cx = function() {
         cxs.unshift(cxs.pop());
