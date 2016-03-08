@@ -44,6 +44,12 @@ return to the main demos landing page.</p>
   </p>
 </div>
 
+<h4>From the Blog Roll</h4>
+
+{{#eachCardInList 'Blog'}}
+  {{> postTeaser}}
+{{/eachCardInList}}
+
 <script type="text/javascript" charset="utf-8">
 var searchData = [
   {{#eachCard}}

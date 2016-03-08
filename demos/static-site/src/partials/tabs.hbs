@@ -1,6 +1,6 @@
 <ul class="tabs">
   <li><a href="index.html">Home</a></li>
-  {{#eachCard}}
+  {{#eachCardInList 'Pages'}}
   <li><a href="{{slugify name}}.html">{{name}}</a></li>
-  {{/eachCard}}
+  {{/eachCardInList}}
 </ul>
